@@ -1,0 +1,10 @@
+{
+	"short_name": "pwa",
+	"name": "PWADemo",
+	"icons": [
+
+	],
+	"start_url": "/",
+	"orientation": "standalone",
+	"background_color": "white"
+}
