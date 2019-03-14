@@ -13,10 +13,15 @@ if ('serviceWorker' in navigator) {
 
 	window.addEventListener('beforeinstallprompt', e => {
 		e.preventDefault();
-
 		deferredPrompt = e;
 
-		deferredPrompt.prompt();
+		try {
+			deferredPrompt.prompt();
+		}
+		catch (exception) {
+			console.dir(exception);
+		}
+
 		deferredPrompt.userChoice
 		.then(result => {
 			if (result.outcome === "accepted") {
