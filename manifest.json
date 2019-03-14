@@ -2,9 +2,19 @@
 	"short_name": "pwa",
 	"name": "PWADemo",
 	"icons": [
-
+		{
+			"src": "/icons/192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/icons/512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
 	],
 	"start_url": "/",
-	"orientation": "standalone",
+	"orientation": "landscape",
+	"display": "standalone",
 	"background_color": "white"
 }
