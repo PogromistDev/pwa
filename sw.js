@@ -1,5 +1,5 @@
 const cacheName = "v1";
-const cacheList = ["/"];
+const cacheList = ["/pwa/"];
 
 self.addEventListener('install', event => {
 	event.waitUntil(
