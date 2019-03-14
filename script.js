@@ -15,12 +15,10 @@ if ('serviceWorker' in navigator) {
 		e.preventDefault();
 		deferredPrompt = e;
 
-		try {
-			deferredPrompt.prompt();
-		}
-		catch (exception) {
-			console.dir(exception);
-		}
+		deferredPrompt.prompt()
+		.catch(err => {
+			console.dir(err);
+		});
 
 		deferredPrompt.userChoice
 		.then(result => {
