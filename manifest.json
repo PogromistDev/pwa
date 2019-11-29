@@ -15,6 +15,6 @@
 	],
 	"start_url": "/pwa/",
 	"orientation": "landscape",
-	"display": "standalone",
+	"display": "minimal-ui",
 	"background_color": "white"
 }
